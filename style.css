@@ -1,0 +1,76 @@
+@import url('https://front.googleapis.com/css2?family=Raleway&family=pacifico&display=swap'); 
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box ;
+   font-family:'Raleway',sans-serif ;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 10%;
+   align-items: center;
+}
+
+
+#logo{
+   font-family: 'pacifico';
+   text-decoration: none;
+   color: #202020;
+}
+
+.links a{
+   text-decoration: none;
+   color: #555;
+   padding:5px 10px ;
+   font-size: 18px;
+}
+
+nav button{
+   padding: 10px 20px;
+   border: none;
+   border-radius:50px;
+   background-color: #1fd680;
+   color: #fff;
+   box-shadow: 0 2px 15px #15e986;
+   cursor: pointer;
+   transition: 0.7s;
+}
+
+nav button:hover{
+   box-shadow: 0 0 15px 10px #76e9b4;
+   transform: scale(1.1);
+}
+.her0{
+   padding: 20px;
+   display: flex;
+   gap: 20px;
+}
+
+.hero :is(figure,cta){
+    flex: 1;
+}
+
+.hero figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.hero figure .image{
+    background-color: #000;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    justify-self: end;
+}
+
+.hero figure .image:hover {
+    animation: pulse  .5s infinite alternate;
+}
+figure .image:nth-child(2) {
+top: -20px
+     
+}
